@@ -4,6 +4,8 @@ function booWho(bool) {
     return true;
   }
   return false;
+  // refactored solution:
+  // return typeof(bool) === 'boolean';
 }
 
 booWho(null);
