@@ -13,3 +13,22 @@ function steamrollArray(arr) {
 }
 
 steamrollArray([1, [2], [3, [[4]]]]);
+
+// function steamrollArray(arr) {
+//   var rolled = [];
+//   var flatten = function(arg) {
+//     if(Array.isArray(arg)) {
+//       for (var a in arg) {
+//         flatten(arg[a]);
+//       }
+//     }
+//     else {
+//       rolled.push(arg);
+//     }
+//   };
+  
+//   arr.forEach(flatten);
+//   return rolled;
+// }
+
+// steamrollArray([1, [2], [3, [[4]]]]);
